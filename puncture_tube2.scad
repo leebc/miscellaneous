@@ -45,7 +45,7 @@ difference() {
 			difference()  {
 				cylinder(r=tube_tube_r, h=tube_tube_h, $fn=resolution);
 				union(){
-					translate([0,0,-0.005])
+					translate([0,0,0.005])
 						cylinder(r=venturi_r, h=venturi_h, $fn=resolution);
 					translate([0,0,venturi_h-venturi_r])
 						rotate([0,90,0])
