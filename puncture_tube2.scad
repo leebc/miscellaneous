@@ -43,7 +43,8 @@ difference() {
 				
 			 rotate([0,180,180])
 			difference()  {
-				cylinder(r=tube_tube_r, h=tube_tube_h, $fn=resolution);
+				translate([0,0,-0.001])
+	#				cylinder(r=tube_tube_r, h=tube_tube_h, $fn=resolution);
 				union(){
 					translate([0,0,0.005])
 						cylinder(r=venturi_r, h=venturi_h, $fn=resolution);
