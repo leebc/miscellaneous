@@ -1,12 +1,13 @@
 $fn=100;
-radius_fudge_factor=0.4*2;
+radius_fudge_factor=0; //.4*2;
 
-sensor_r=16+radius_fudge_factor;
-cap_r=2*25;
+sensor_r=16/2+radius_fudge_factor;
+cap_r=2*25/2;
 
 heights=1*25;
 
-sensor_gap=9.35+2*sensor_r;
+sensor_gap=9.35+2*sensor_r-2*radius_fudge_factor;
+
 
 intersection(){
 	difference(){
