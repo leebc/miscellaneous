@@ -11,7 +11,10 @@ sensor_gap=9.35+2*sensor_r-2*radius_fudge_factor;
 
 intersection(){
 	difference(){
-		cylinder(r=cap_r, h=heights);
+		union(){
+			import("./hsm-bung.stl", convexity = 5);
+			//cylinder(r=cap_r, h=heights);
+		}
 		union(){
 			translate([sensor_gap/2,0,-1])
 				cylinder(r=sensor_r, h=heights+2);
