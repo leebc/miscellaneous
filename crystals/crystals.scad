@@ -7,8 +7,8 @@ color_layer_h=3;
 offset=0;
 //offset=color_layer_h;
 
-difference()
-//intersection()
+//difference()
+intersection()
 	{
 	union()
 		{
