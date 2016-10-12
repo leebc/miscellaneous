@@ -1,5 +1,5 @@
-crystal1_b_h=15;
-crystal1_b_r=5;
+crystal1_b_h=20;
+crystal1_b_r=7;
 crystal1_facets=6;
 crystal1_t_h=crystal1_b_r;
 
@@ -7,8 +7,8 @@ color_layer_h=3;
 offset=0;
 //offset=color_layer_h;
 
-//difference()
-intersection()
+difference()
+//intersection()
 	{
 	union()
 		{
